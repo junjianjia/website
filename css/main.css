@@ -1,0 +1,700 @@
+body {
+    margin:0;
+    padding:0;
+    font:12px monospace,Helvetica,Arial,sans-serif;
+    background:#f7f7f7;
+}
+li,ol,ul,a,p {
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    text-decoration: none;
+}
+input {
+    vertical-align:middle;
+    font-size:100%;
+}
+em,i {
+    font-style:normal;
+}
+
+/*-----------------------header-----------------------*/
+.header{
+    background: url("../images/tbgimg.png") no-repeat center top ;
+    height: 219px;
+}
+.header_content{
+    width: 1000px;
+    margin:0 auto;
+    position: relative;
+}
+.header_content:before{
+    content:'';
+    display:block;
+}
+.header_content:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.header_box{
+    padding-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1rem;
+}
+.header_box .mywelcome{
+    line-height: 38px;
+    float: right;
+    color:white ;
+    margin-right: 50px;
+}
+.header_box .myselfbox{
+    float: right;
+    width: 36px;
+    padding: 0px 14px;
+    height: 34px;
+    background: url("../images/user.png") left 5px center no-repeat;
+    color: #999999;
+    border-radius: 25px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+    overflow:hidden;
+    -o-transition: all 0.3s;
+    -webkit-transition:  all 0.3s;
+    -moz-transition: all 0.3s;
+    margin-right: 8px;
+}
+
+.header_box .myselfbox:focus{
+    width: 205px;
+}
+.header_box .mysearchbox{
+    float: right;
+    padding: 0px 10px;
+    width: 17px;
+    height: 32px;
+    cursor: pointer;
+    background: url("../images/search.png") right 5px center no-repeat;
+    color: #ccc;
+    border-radius: 25px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    outline: none;
+    overflow:hidden;
+    -o-transition: all 0.3s;
+    -webkit-transition:  all 0.3s;
+    -moz-transition: all 0.3s;
+    margin-right: 180px;
+}
+.header_box .mysearchbox:focus{
+    width: 180px;
+    padding-right: 35px;
+}
+.header_content .saying{
+    margin-top: 35px;
+    margin-right: 28px;
+    width: 370px;
+    text-indent: 2em;
+    line-height: 20px;
+    font-size: 0.8rem;
+    color: #fefefe;
+    float: right;
+}
+.header_content .portrait{
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    width: 190px;
+    height: 185px;
+    padding-top:5px;
+    margin: 15px;
+    border: 1px #999999 solid;
+    text-align: center;
+    transform:rotate(-7deg);
+    -ms-transform:rotate(-7deg);    /* IE 9 */
+    -moz-transform:rotate(-7deg);   /* Firefox */
+    -webkit-transform:rotate(-7deg); /* Safari ºÍ Chrome */
+    -o-transform:rotate(-7deg);     /* Opera */
+    transition:transform 2s;
+    -ms-transition: -ms-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+    -o--transition:-o--transform 2s;
+}
+.header_content .portrait:hover{
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.header_content .portrait img{
+    width: 95%;
+    vertical-align: middle;
+}
+
+/*****************navbar*****************/
+div.nav{
+    background-color: #F0F4F0;
+    overflow: hidden;
+}
+div.nav ul{
+    width:1000px;
+    margin: auto;
+    overflow: hidden;
+    height: 70px;
+
+}
+div.nav ul li{
+    padding-top: 8px;
+    float: left;
+    width:20% ;
+    text-align: center;
+    font-size: 1.2rem;
+    height:62px;
+}
+div.nav ul li a{
+    color: #22BC81;
+    vertical-align: middle;
+}
+div.nav ul li img{
+    width: 25px;
+}
+div.nav ul li:hover{
+    background-color: #E4ECE8;
+    border-top: 1px solid #22BC81;
+}
+div.nav ul li:hover a{
+    color: #696D71;
+    display: block;
+    width: 100%;
+}
+div.nav ul li:hover img{
+    filter:grayscale(100%);/*图片置灰*/
+    -webkit-filter:grayscale(100%);
+    -moz-filter:grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter:grayscale(100%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);/**ie下的滤镜**/
+    -webkit-filter:grayscale(1)
+}
+
+/******************section********************/
+/****footprint****/
+div.footprint
+{
+    width: 100%;
+    background-color: #E4ECE8;
+    /*background:url(../images/bg.png) no-repeat center top;*/
+}
+.content-intro{
+    width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color:#000;
+}
+.content-intro .content-title{
+    margin-bottom: 2px;
+}
+.sidetop{
+    width: 100%;
+    height: 110px;
+}
+.sidetop ul{
+    height:70px;
+}
+.sidetop li{
+    width: 20%;
+    float: left;
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+}
+.sidetop li ul p{
+    font-size: 0.9rem;
+}
+li hr{
+    width: 1px;
+    height: 27px;
+}
+.sidetop li ul {
+    position: absolute;
+    left: 25px;
+    top: 28px;
+    vertical-align: middle;
+    display: none;
+}
+/************about faith***************/
+div.mine_faith{
+    width:1000px;
+}
+div.mine_faith>p{
+    padding:5px;
+    font-size:20px;
+    line-height: 26px;
+    font-weight:bold;
+    color:#1a1;
+    text-align:center;
+}
+div.mine_faith>p>img{
+    width:10%;
+    vertical-align: middle;
+}
+div.mine_faith>p>b{
+    color:#fd0;
+    font-size:30px;
+}
+/*banner*/
+#slider_box {
+    width: 670px;
+    margin:0 auto;
+}
+#slider {
+    width: 670px;
+    height:410px;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+#slider #imgs {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:3350px;
+    height:410px;
+}
+#slider #imgs li{
+    float:left;
+    z-index:0;
+}
+#slider #idxs {
+    position:absolute;
+    bottom:15px;
+    right:30px;
+}
+#slider #idxs li {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    background: #3e3e3e;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left:10px;
+}
+#slider #idxs li:hover ,#slider #idxs li.hover {
+    background:#1a1;
+}
+/******************scenery********************/
+div.scenery{
+    width: 100%;
+    background-color: #F0F4F0;
+}
+.content-life{
+    width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.content-life .content-title {
+    margin-bottom: 2px;
+}
+.current{
+    background: url("../images/le-1.png") no-repeat left 50px top 60px, url("../images/le-2.png") no-repeat right 50px top 60px;
+    color: #1f991f;
+}
+.lifetime{
+    width: 100%;
+}
+.lifetime li{
+    width: 20%;
+    float: left;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.content-life .sidetop li ul {
+    left: 135px;
+    top: 28px;
+}
+.content-life .lifetime li span{
+    font-size:0.9rem;
+}
+#tag{
+    overflow:hidden;
+}
+#tag li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#tag li span{
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+#tagContent div{
+    width:1000px;
+    overflow: hidden;
+    display:none;
+}
+#tagContent .lifecon1,.lifecon2,.lifecon3,.lifecon4,.lifecon5{
+    margin-top: 20px;
+}
+#tagContent p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#tagContent .life-pic{
+    width: 300px;
+    height: 230px;
+    margin:20px 12px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    box-shadow: 0 0 5px #ccc;
+    position: relative;
+    text-align: center;
+    float: left;
+    line-height: 1.3rem;
+ }
+#tagContent .life-pic li{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    line-height: 2.2rem;
+    background-color: #FF9933;
+    border-radius:0px 0px 5px 5px;
+    display: none;
+    left: 0px;
+    bottom: 0px;
+}
+#tagContent .lifecon2  .life-pic li,
+#tagContent .lifecon4  .life-pic li{
+    background-color: #52cc52;
+}
+/********************timeline************************/
+div.timeline
+{
+     width: 100%;
+    background-color: #E4ECE8;
+}
+.content-diary a {
+    color:#737373;
+    text-decoration:none;
+}
+.content-diary a:hover {
+    color:#fd8609;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-diary {
+    position:relative;
+    width:100%;
+    margin:0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.content-diary .diary-wrapper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.content-title {
+    width: 100%;
+    border-bottom: 1px solid #a6a6a6;
+    text-align: left;
+    line-height: 3rem;
+    color: #6f7b93;
+    font-size: 1.5rem;
+}
+div.diary-main {
+    background: url("../images/line-bg2.png") repeat-y 259px 0;
+}
+div.diary-year {
+    position: relative;
+}
+div.diary-year .years {
+    height: 40px;
+    width: 165px;
+    padding-right: 30px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: right;
+}
+div.diary-year .years a {
+    color: #6f7b93;
+}
+div.diary-year .years i{
+    display:block;
+    position:relative;
+    height:0;
+    width:0;
+    left:190px;
+    top:-22px;
+    border:8px solid transparent;
+    border-right-color:#6f7b93;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+    transition:.5s;
+    -webkit-transform-origin:6px 3px;
+    -moz-transform-origin:6px 3px;
+    -ms-transform-origin:6px 3px;
+    -o-transform-origin:6px 3px;
+    transform-origin:6px 3px
+}
+div.diary-year .diary-list{
+    padding:8px 0;
+    position:relative;
+    overflow:hidden;
+    -webkit-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+    -moz-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+    -ms-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+    -o-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+    transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s
+}
+div.diary-list ul {
+    bottom: 0;
+}
+div.diary-list ul li {
+    background: url("../images/circle3.png") no-repeat 245px 6px;
+    color: #000;
+}
+div.diary-list ul li.highlight {
+    background: url("../images/circle2.png") no-repeat 249px 3px;;
+}
+li.cls:before{
+    content: "";
+    display: block;
+}
+li.cls:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+div.diary-list li.highlight>p.date, div.diary-list li.highlight>p.intro {
+    color: #ec6a13;
+}
+div.diary-list li>p.date,div.diary-list li>p.version{
+    float:left;
+    display:block;
+    clear:both;
+    width:200px;
+    line-height:24px;
+    text-align:right
+}
+div.diary-list li>p.date{
+    font-size:18px;
+    line-height:32px;
+    color:#737373
+}
+div.diary-list li>p.intro,div.diary-list li>div.more {
+    float: left;
+    width: 600px;
+    margin-left: 120px;
+    line-height: 20px;
+
+}
+div.diary-list li>div.more{
+    padding-bottom:15px;
+}
+div.diary-list li>div.more>p{
+    margin: 5px 0px;
+    font-size: 0.9rem;
+}
+div.diary-list li p.intro {
+    font-size: 1.1rem;
+    line-height: 27px;
+    color: #1f991f;
+}
+/***************/
+div.diary-wrapper:first-child div.diary-year.close>.years i{
+    transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg)
+}
+div.diary-wrapper:first-child .diary-main .diary-year.close .diary-list{
+    opacity:0;
+    height:0!important;
+}
+.ie7 div.diary-year .years i{
+    left:40px
+}
+/************share************/
+div.shareSpace{
+    width: 100%;
+    background-color: #F0F4F0;
+}
+.content-words{
+    width: 1000px;
+    margin:0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+/*手风琴*/
+#accordion{
+    width:998px;
+    height:500px;
+    border:1px solid #CCC;
+    overflow:hidden;
+}
+#accordion li{
+    float:left;
+    position:relative;
+    width:80px;
+    height:100%;
+    overflow:hidden;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;opacity:0.5;cursor:pointer;
+}
+#accordion li .d1-tit{
+    position:absolute;
+    width:50px;
+    height:200px;
+    top:35%;
+    left:15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#accordion li:first-child{
+    width:758px;
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    opacity:1;
+}
+ul.d1{
+    width:758px;
+    height:500px;
+    background: #7fd49b;
+}
+ul.d1 .d1-1{
+    color:#174d29;
+}
+ul.d1 .d1-con{
+    text-align:justify;
+    text-justify:inter-ideograph;
+    padding-right: 65px;
+    position: absolute;
+    left: 110px;
+    top:50px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#174d29;
+}
+ul.d1 .d1-con p{
+    text-indent: 2em;
+}
+
+ul.d2{
+    width:758px;
+    height:500px;
+    background: #FFCC99;
+}
+ul.d2 .d2-2{
+    color:#a66b32;
+}
+ul.d2 .d2-con{
+    text-align:justify;
+    text-justify:inter-ideograph;
+    padding-right: 60px;
+    position: absolute;
+    left: 110px;
+    top:65px;
+    font-size:1rem;
+    line-height: 1.5rem;
+    color: #66411f;
+}
+ul.d2 .d2-con p{
+    text-indent: 2em;
+    padding-bottom: 10px;
+}
+ul.d3{
+    width:758px;
+    height:500px;
+    background: #f0ef93;
+}
+ul.d3 .d3-3{
+    color: #9c9b30;
+}
+ul.d3 .d3-con{
+    position: absolute;
+    left: 185px;
+    top:60px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #4d4c18;
+}
+ul.d3 .d3-con p{
+    font-size: 1.2rem;
+    padding: 15px 0px 5px 0px;
+}
+ul.d4{
+    width:758px;
+    height:500px;
+    background: #f28e3d;
+}
+ul.d4 .d4-4{
+    color: #9d5114;
+}
+ul.d4 .d4-con{
+    position: absolute;
+    left: 140px;
+    top:65px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: #4d280a;
+    text-align: center;
+}
+ul.d4 img{
+    padding:20px 20px;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+}
+ul.d4 img:hover{
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+/*回到顶部*/
+div.totop{
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    width:50px;
+    height:50px;
+    display:none;
+}
+div.totop a,div.totop a:link{
+    background-image:url(../images/sun2.png);
+    background-repeat:no-repeat;
+    width:50px;
+    height:50px;
+    outline:none;
+    display:inline-block;
+    background-size: cover;
+}
+div.totop a:hover{
+    background-image:url(../images/sun4.png);
+    background-repeat:no-repeat;
+    width:50px;
+    height:50px;outline:none;
+}

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <title>self space</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" rel="script" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" rel="script" src="js/main_1.js"></script>
+    <script type="text/javascript" rel="script" src="js/main_2.js"></script>
+</head>
+<body>
+    <!-- 页头部分-->
+    <div class="header">
+        <div class="header_box">
+            <input class="mysearchbox" type="text" maxlength="100">
+            <input class="myselfbox" type="button" maxlength="100" value="     Glad to see you~">
+            <div class="mywelcome">
+                欢迎来到 Livia 的个人空间
+            </div>
+        </div>
+        <div class="header_content">
+            <div class="saying">
+                你好
+            </div>
+            <div class="portrait">
+                <a href="#"><img src="images/portrait1.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <!--导航条-->
+    <div class="nav">
+        <ul class="navbar">
+            <li><a href="main.html"><img src="images/home.png"><br>首页</a></li>
+            <li><a href="#m-info"><img src="images/info.png"><br>成长脚印</a></li>
+            <li><a href="#m-life"><img src="images/view.png"><br>路上风景</a></li>
+            <li><a href="#m-diary"><img src="images/dairy.png"><br>时光轴</a></li>
+            <li><a href="#m-share"><img src="images/dia.png"><br>分享域</a></li>
+        </ul>
+    </div>
+    <!--主体部分-->
+    <div class="section">
+        <!------------------------------成长脚印---------------------------------->
+        <div class="footprint">
+            <!--锚点连接-->
+            <a name="m-info"></a>
+            <div class="content-intro">
+                <div class="intro-wrapper">
+                    <p class="content-title">成长脚印</p>
+                    <div class="sidetop">
+                        <ul>
+                            <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
+                                <hr>1991
+                                <ul>
+                                    <img src="images/born.png">
+                                    <p>出生</p>
+                                </ul>
+                            </li>
+                            <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
+                                <hr>1998
+                                <ul>
+                                    <img src="images/child.png">
+                                    <p>小学</p>
+                                </ul>
+                            </li>
+                            <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
+                                <hr>2004
+                                <ul>
+                                    <img src="images/middle.png">
+                                    <p>中学</p>
+                                </ul>
+                            </li>
+                            <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
+                                <hr>2010
+                                <ul>
+                                    <img src="images/university.png">
+                                    <p>大学</p>
+                                </ul>
+                            </li>
+                            <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
+                                <hr>2014
+                                <ul>
+                                    <img src="images/work.png">
+                                    <p>工作</p>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!----------- 关于爱好 ------------>
+                    <div class="mine_faith">
+                        <p>
+                            <img src="images/hua.png"><b>O</b>nce you see the faith,you get hope...
+                        </p>
+                        <div id="slide_box">
+                            <div id="slider">
+                                <ul id="imgs">
+                                </ul>
+                                <ul id="idxs">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------------------------路上 风景------------------------>
+        <div class="scenery">
+            <a name="m-life"></a>
+            <div class="content-life">
+                <div class="intro-wrapper">
+                    <p class="content-title">路上风景</p>
+                    <div class="lifetime">
+                        <ul id="tag">
+                            <li>
+                                <hr>1991<br><span>恩施</span>
+                            </li>
+                            <li>
+                                <hr>1998<br><span>无锡</span>
+                            </li>
+
+                            <li>
+                                <hr>2014<br><span>深圳</span>
+                            </li>
+                            <li>
+                                <hr>2015<br><span>厦门</span>
+                            </li>
+                            <li>
+                                <hr>未来时<br><span>巴黎</span>
+                            </li>
+                        </ul>
+                        <div id="tagContent">
+                            <div class="lifecon1">
+                                <p>-- 我的家乡 --<br>
+                                    恩施，湖北省唯一少数民族自治州，享有“鄂西林海”、 “华中药库”、 “烟草王国”、“世界硒都”之称号。</p>
+                                <ul class="life-pic">
+                                    <img src="images/es_dxg.jpg"><br>
+                                    百里绝壁、千丈瀑布、傲啸独峰、远古村寨
+                                    <li>恩施大峡谷</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/en_nec.jpg">
+                                    摔碗酒、摆手舞、小吃街、民族情
+                                    <li>女儿城</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/es_tsc.jpg">
+                                    吐司城墙、鼓楼、钟楼、卧虎铁索桥
+                                    <li>吐司城</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/es_fxp.jpg">
+                                    侗族文化、西兰卡普、玉露茶园
+                                    <li>枫香坡</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/en_llg.jpg">
+                                    喀斯特地貌，流泉飞溅，云封雾锁
+                                    <li>龙鳞宫</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/es_sby.jpg">
+                                    天然石林，气势磅礴
+                                    <li>梭布垭石林</li>
+                                </ul>
+                                <p>-- 喜爱这里的民族特色--<br>
+                                    苗族，土家族，侗族的民族文化集于一体，建筑，美食，织布...
+                                </p>
+                            </div>
+
+                            <div class="lifecon2">
+                                <p>-- 第二故乡 --<br>
+                                    无锡，自古就是鱼米之乡，素有布码头、钱码头、窑码头、丝都、米市之称，是中国国家历史文化名城。
+                                </p>
+                                <ul class="life-pic">
+                                    <img src="images/wx_taihu.jpg">
+                                    是迷人的风光，亦是供养无锡人的生命之源
+                                    <li>太湖鼋头渚</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/wx_my.jpg">
+                                    老藤、古梅、新桂、奇石
+                                    <li>梅园</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/wx_sgc1.jpg">
+                                    影视基地，赤壁栈道，姑苏东吴
+                                    <li>三国城，水浒城</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/wx_zz.jpg">
+                                    温婉古镇，小桥流水人家
+                                    <li>周庄</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/wx_ncs.jpg">
+                                    始建于梁武帝太清年间，南朝名寺，号称“江南最胜丛林”。
+                                    <li>南禅寺</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/wx_zhw.jpg">
+                                    品茗、听琴、闻香、观水、禅意
+                                    <li>拈花湾</li>
+                                </ul>
+                                <p>-- 喜爱无锡的人文气息 --<br>
+                                    是寺是河，是诗是画，是石径是帆船，是早起无锡卫视传唱之歌，是吴侬软语的耳鬓厮磨。
+                                </p>
+                            </div>
+
+                            <div class="lifecon3">
+                                <p>-- 工作初到之地 --<br>
+                                    深圳，经济特区，且享有“设计之都”、“钢琴之城”、“创客之城”等美誉。
+                                </p>
+                                <ul class="life-pic">
+                                    <img src="images/sz_sjzc.jpg">
+                                    世界名建筑之缩影，‘环游世界’
+                                    <li>世界之窗</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/sz_hsl.jpg">
+                                    晚风拂面，与香港隔海相望
+                                    <li>红树林</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/sz_dms.jpg">
+                                    面朝大海，春暖花开
+                                    <li>大梅沙海湾</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/sz_hqc.jpg">
+                                    从东部到西部，花开满地，欢乐游园
+                                    <li>华侨城</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/sz_xz.jpg">
+                                    带上单反，骑上单车，随手便是一张桌面
+                                    <li>荷兰花卉小镇</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/sz_dfyhc.jpg">
+                                    色彩鲜艳的油画临街而展，频频驻足，却怎么也看不够
+                                    <li>大芬油画村</li>
+                                </ul>
+                                <p>-- 喜爱深圳飞速发展的不仅仅是经济，还有人文--<br>
+                                    城市规划大到商业中心，小到街边花木，无不赏心悦目
+                                </p>
+                            </div>
+
+                            <div class="lifecon4">
+                                <p>-- 说走就走的旅行 --<br>
+                                    厦门，北邻南安，东南与大小金门和大担岛隔海相望，是闽南地区的主要城市之一，与漳州、泉州并称“厦漳泉”，闽南金三角经济区。
+                                </p>
+                                <ul class="life-pic">
+                                    <img src="images/xm_hdl.jpg">
+                                    单车骑行，海风扑面，一面是干净的路景，一面是望不到边的海
+                                    <li>环岛路</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/xm_gly.jpg">
+                                    阳光与美景同在，心情怎能不好？
+                                    <li>鼓浪屿</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/xm_zsl.jpg">
+                                    步行街，繁华市区，建筑仍保留旧时模样
+                                    <li>中山路</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/xm_hdsj.jpg">
+                                    玻璃长廊，仿佛置身海底，忽而有鱼扑面而来
+                                    <li>海底世界</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/xm_ft.jpg">
+                                    游乐王国，高科技的主题公园
+                                    <li>方特度假王国</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/xm_jgh.jpg">
+                                    林区山形如“湖”状而得名，原始森林
+                                    <li>金光湖</li>
+                                </ul>
+                                <p>-- 喜爱厦门恣意悠闲热爱生活的姿态--<br>
+                                    有海，有风铃，有信纸，有藤蔓，有转角精心设计的门店，走进去是不一样的世界。
+                                </p>
+                            </div>
+
+                            <div class="lifecon5">
+                                <p>-- 最想去的旅游城市 --<br>
+                                    巴黎（Paris），法国的首都，是欧洲第二大城市，誉为时尚之都，世界花都,浪漫之都，艺术之都。
+                                </p>
+                                <ul class="life-pic">
+                                    <img src="images/bl1.png">
+                                    巴黎的标志之一，俗称“铁娘子”。
+                                    <li>埃菲尔铁塔</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/bl2.png">
+                                    出征、胜利、和平、抵抗
+                                    <li>凯旋门</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/bl3.png">
+                                    世界四大博物馆之首，藏有各国艺术珍品
+                                    <li>卢浮宫</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/bl4.png">
+                                    哥特式建筑，宗教、文化、建筑艺术
+                                    <li>巴黎圣母院</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/bl5.png">
+                                    法国北部大河，全长780公里
+                                    <li>塞纳河畔</li>
+                                </ul>
+                                <ul class="life-pic">
+                                    <img src="images/bl6.png">
+                                    世界五大宫殿之一，豪华富丽
+                                    <li>凡尔赛宫</li>
+                                </ul>
+                                <p>-- 喜爱巴黎的梦幻 --<br>
+                                    巴黎不仅仅是个地方，它已经成了一种精神状态。无论你是谁，都可以在这个既怀旧又前卫，既宁静又喧嚣，既国际化又本土化的城市找到自己需要的那一剂量心灵解药，到过巴黎的，一定不会再稀罕天堂
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------------------------时光轴------------------------>
+        <div class="timeline">
+            <a name="m-diary"></a>
+            <div class="content-diary">
+                <div class="diary-wrapper">
+                    <p class="content-title">时光轴</p>
+                    <div class="diary-main">
+                        <div class="diary-year">
+                            <div class="years">
+                                <a href="#">2015年<i></i></a>
+                            </div>
+                            <div class="diary-list">
+                                <ul>
+                                    <li class="cls highlight">
+                                        <p class="date">9月29日</p>
+                                        <p class="intro">突然问自己还想考研吗？</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>2015年的考研失败，更多的是自我的不努力，自我的放弃。考研不难，还是要看自己的努力程度。没有后不后悔，只有甘心不甘心。</p>
+                                            <p>这个想法会经常冒出来，说到底，其实我自己也不知道。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">9月23日</p>
+                                        <p class="intro"> 转正。</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p> 三个月试用期结束，转正也很顺利。没有想象中的要步步为营，比想象更简单一点。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls  highlight">
+                                        <p class="date">6月23日</p>
+                                        <p class="intro">开启工作生涯。</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p> 俗话说，一花一世界，一叶一追寻。接下来就是追寻我的自我养活能力了。</p>
+                                            <p>人人都有第一次，我相信我会努力做好。 </p>
+                                        </div>
+                                    </li>
+                                    <li class="cls highlight">
+                                        <p class="date">6月20日</p>
+                                        <p class="intro">结束大学生活</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>拿到学校的毕业证书和学位证书，内心其实是很复杂的，没有想象中的欣喜，也没有想象中的失落，平平淡淡，安然走过。</p>
+                                            <p>在任何一个地方待久了，走的时候都是舍不得的，人生有很多舍不得的地方，所以要习惯。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">6月18日</p>
+                                        <p class="intro">公开答辩</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>当我被选为公开答辩手的时候，我内心是痛的，因为我的设计几斤几两，我懂。在当今这个网络发达的时代，大家都懂的。</p>
+                                            <p>我很紧张，吃不好睡不好，而且论文还出了很大的问题，我感觉我都要瘫痪了。不过，幸亏努力是有结果的。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">6月19日</p>
+                                        <p class="intro">收到入职offer</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>意料之中的事，但还是有点欣喜，收拾收拾，准备入职。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">6月09日</p>
+                                        <p class="intro">达内培训结束</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>为期四个多月的培训结束了，接下来就是投简历面试找工作。</p>
+                                            <p>这个过程，就是完全靠自己了。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">02月01日</p>
+                                        <p class="intro">达内UI设计正式开始培训</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>包括四个阶段的学习，分别是GUI（图形界面设计），AUI（传统美术），WUI（WEB界面设计），MUI（移动设备界面设计）</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">01月25日</p>
+                                        <p class="intro">开始达内训练营</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>没想参加，但是多学点总是好的。</p>
+                                            <p>考研结果还没出来，但是我知道我非常没戏了，所以知不知道结果，都是一样的，我已经放弃等待结果了。我只能往前看，希望越来越好。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="diary-year">
+                            <div class="years">
+                                <a href="#">2014年<i></i></a>
+                            </div>
+                            <div class="diary-list">
+                                <ul>
+                                    <li class="cls">
+                                        <p class="date">12月27日</p>
+                                        <p class="intro">考研初试</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>考试很煎熬，但内心很淡然，知道考不上了，但是不会放弃。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">10月10日</p>
+                                        <p class="intro">考研正式网上报名</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>选定专业和学校,内心很忐忑。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">9月25日</p>
+                                        <p class="intro">考研预报名</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>正值学校安排去高淳培训，没有电脑，填写资料的过程很艰苦。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">9月15日</p>
+                                        <p class="intro">高淳培训</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>学校在这个时候组织高淳培训java，内心是拒绝的，但是没办法。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls highlight">
+                                        <p class="date">6月12号</p>
+                                        <p class="intro">拿到驾照</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>整个去驾校练车的过程是无语的，以至于后来见到教练，脚都是软的。</p>
+                                            <p>如果再给我个机会去练车，我是万万不愿意的。特别崩溃。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls highlight">
+                                        <p class="date">3月10日</p>
+                                        <p class="intro">决定考研</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>考研一直是我上大学的梦想，只是随着时间的推移，加上自己的惰性，有点忘记而已。父母是一直鼓励我考研的，我只是怕我意志不坚定。</p>
+                                            <p>突然做了这个决定，内心一直很慌，我知道我面前的是一条怎么样的路，我经常问自己这个决定是对的吗？</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="cls">
+                                        <p class="date">1月</p>
+                                        <p class="intro">总在不经意的年生。回首彼岸，纵然发现光景绵长。</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>何如薄幸锦衣郎，比翼连枝当日愿。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="diary-year">
+                            <div class="years">
+                                <a href="#">2013年<i></i></a>
+                            </div>
+                            <div class="diary-list">
+                                <ul>
+                                    <li class="cls">
+                                        <p class="date">9月6日</p>
+                                        <p class="intro">英语六级过了</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>查成绩查的晚，而且本身也没报多大的希望，得知这个结果的时候，还是高兴的。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls highlight">
+                                        <p class="date">8月18</p>
+                                        <p class="intro">脚受伤</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>自成年以来，身体一直没受过什么伤，这次算是意外之祸。</p>
+                                            <p>医生建议把指甲拔掉，吓了我很多跳。我不肯，所以一直发炎流血，反反复复，很久才好。那时候，经常能听见我家杀猪般的叫声，因为我妈在给我涂酒精，N级痛，真的是十指连心。</p>
+                                        </div>
+                                    </li>
+                                    <li class="cls">
+                                        <p class="date">7月23日</p>
+                                        <p class="intro">暑假工</p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>第一次正式的暑假工，之前都是零零散散的兼职。虽然暑假工也是兼职，但是时期要稍微长些，意义自然不一样，希望我能成长些。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="diary-year">
+                            <div class="years">
+                                <a href="#">2012年以前<i></i></a>
+                            </div>
+                            <div class="diary-list">
+                                <ul>
+                                    <li class="cls">
+                                        <p class="date">&nbsp;</p>
+                                        <p class="intro">俱往矣，数风流人物，还看今朝。 </p>
+                                        <p class="version">&nbsp;</p>
+                                        <div class="more">
+                                            <p>记忆总是散落的，没有记录，还真是记不住的，日子太长，往前的只能简单记忆回想了。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!------------------------分享域------------------------>
+        <div class="shareSpace">
+            <a name="m-share"></a>
+            <div class="content-words">
+                <div class="words-wrapper">
+                    <p class="content-title">分享域</p>
+                    <ul id="accordion">
+                        <li>
+                            <ul class="d1">
+                                <div class="d1-tit d1-1">
+                                    我<br>想<br>说<br>的<br>话
+                                </div>
+                                <div class="d1-con">
+                                    <p>我是个web前端新手，一个新的不能再新的新手。没经验，没技术，没创新，没动力。自我嫌恶，又安于现状，不甘平庸，又害怕行动。</p>
+                                    <p>做前端，没那么难，其实就是学，不停的学。</p>
+                                    <p>现在技术更新很快，所以眼光要放远，要随时让自己处于虚心学习的状态。不要学会div+css,就觉得很了不起，就不想学其它的技术了，懂div+css的人太多了。现在网上各种教程资料，所以多学点东西，提升自我价值，没错的。</p>
+                                    <p>有的人觉得自己学好了，已经很厉害了。html+css够扎实？javascrip能灵活运用？使用jQuery一路到头？DOM，AJAX,JSON,DHTML，有接触？后台一些基本语言，了解？Web前端是永无止境的，没有人能真正的学到头。不要怕累，不要怕伤眼，不要怕动脑，知识是死的，方式是活的，已经爬到食物链的顶端，还有什么是解决不了的吗？相信自己。</p>
+                                    <p>其实，还是看你自己。</p>
+                                    <p>害怕这样的一种状态。早上起不来，早饭吃不好，麻木的上班，渴望下班，下班后就是脱离任何思想，看电视玩手机，还要熬夜玩，各种拖延症。第二天又是这样，循环不断。我们现在还年轻，有很多的精力，我们需要更多的投资自己。</p>
+                                    <p>别在最该奋斗的日子，选择了安逸和享受。</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="d2">
+                                <div class="d1-tit d2-2">
+                                    激<br>励<br>你<br>自<br>己
+                                </div>
+                                <div class="d2-con">
+                                    <p>放下你的浮躁，放下你的懒惰，放下你的三分钟热度，闭上你什么都想聊两句的嘴巴，静下心来好好做你该做的事。你的努力是唯一能让你站稳脚跟的依靠。</p>
+                                    <p>做你想做的，趁阳光正好。去追逐梦想，趁还年轻。不浪费时间，不挥霍时光，不沉迷过去，不恐惧未来。努力从来不会白费，今日播下的种子，正在你看不见、想不到的某处悄悄地发芽。</p>
+                                    <p>你想要好的成绩，但是你不去学习；你想要富裕的生活，但是你不去拼搏奋斗；你想要健康的身体，但是你没能坚持锻炼；你想要称心如意的生活，但是你从未真正的改变过自己。你尽力了，才有资格说自己运气不好。</p>
+                                    <p>水再浑浊，只要长久沉淀，依然会分外清澄；人再愚钝，只要足够努力，一样能改写命运，不要愤懑起点太低，那只是我们站立的原点。人生是一场漫长竞赛，有些人笑在开始，有些人却赢在最后。</p>
+                                    <p>世界上最难的事，莫过于在热闹之中按兵不动，在诱惑面前不忘初心，别偏激，按兵不动不是让你停滞不前，不忘初心也并非不可以放眼未来，冷静，不是迟钝，沉默，不代表妥协。</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="d3">
+                                <div class="d1-tit d3-3">
+                                    推<br>荐<br>的<br>书<br>籍
+                                </div>
+                                <div class="d3-con">
+                                    <p>入门：</p>
+                                    《深入浅出JavaScript》-- Christion Heilmann<br>
+                                    《JavaScript DOM编程艺术》-- Jeremy Keith<br>
+                                    《JavaScript DOM高级程序设计》-- Jeffrey Sambells<br>
+                                    <p>进阶：</p>
+                                    《ppk谈JavaScript》-- Peter-PaulKoch<br>
+                                    《精通JavaScript》-- JohnResig<br>
+                                    《JavaScript高级程序设计》-- Nicholas C.Zakas<br>
+                                    <p>高级：</p>
+                                    《JavaScript语言精粹》-- Douglas Crockford<br>
+                                    《JavaScript设计模式》-- Rossharmes<br>
+                                    《Secrets of the JavaScript Ninja》-- JohnResig<br>
+                                    《高性能JavaScript》-- NicholasC.Zakas
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="d4">
+                                <div class="d1-tit">
+                                    要<br>靠<br>你<br>自<br>己
+                                </div>
+                                <div class="d4-con">
+                                    <img class="mind1" src="images/mind-1.png">
+                                    <img class="mind2" src="images/mind-2.png">
+                                    <p>Do what you can, with what you have, where you are.<br>Life always has two sides, choose yours.</p>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="totop"><a></a></div>
+</body>
+</html>

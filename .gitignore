@@ -1,0 +1,17 @@
+/target
+/project/target
+/project/project
+*/*.cache
+*/*.lib
+*/*.db
+*/*.log
+
+.git/
+.cache-main
+.project
+.classpath
+.buildpath
+.settings
+*/bin
+
+*.DS_Store
