@@ -437,7 +437,7 @@ div.timeline
 }
 .content-diary .diary-wrapper {
     position: relative;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
 }
 .content-title {
@@ -456,7 +456,7 @@ div.diary-year {
 }
 div.diary-year .years {
     height: 40px;
-    width: 165px;
+    width: 19%;
     padding-right: 30px;
     font-size: 24px;
     line-height: 40px;
@@ -464,14 +464,16 @@ div.diary-year .years {
 }
 div.diary-year .years a {
     color: #6f7b93;
+    white-space: nowrap;
+    position: relative;
 }
 div.diary-year .years i{
     display:block;
-    position:relative;
+    position: absolute;
     height:0;
     width:0;
-    left:190px;
-    top:-22px;
+    bottom: 1px;
+    left: 100%;
     border:8px solid transparent;
     border-right-color:#6f7b93;
     -webkit-transition:.5s;
@@ -570,7 +572,7 @@ div.shareSpace{
     background-color: #F0F4F0;
 }
 .content-words{
-    width: 1000px;
+    width: 79.4%;
     margin:0 auto;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -578,7 +580,7 @@ div.shareSpace{
 
 /*手风琴*/
 #accordion{
-    width:998px;
+    width:100%;
     height:500px;
     border:1px solid #CCC;
     overflow:hidden;
