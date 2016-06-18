@@ -35,7 +35,7 @@ var slider={
         idxs.addEventListener("mouseover",function(e){
             if(e.target.nodeName=="LI"&&e.target.className!="hover"){
                 var starti=$("#idxs>.hover").html();
-                var endi=e.target.html();
+                var endi=e.target.innerHTML;
                 me.move(endi-starti);
             }
         });
@@ -109,8 +109,8 @@ var slider={
 
 //时光轴动画
 $(function(){
-    $(".diary-year").addClass("close");
-    $(".diary-year").last().removeClass("close");
+    $(".diary-year").addClass("my-close");
+    $(".diary-year").last().removeClass("my-close");
     $(".diary-main .diary-year .diary-list").each(function (e, target) {
         var $target=  $(target),
             $ul = $target.find("ul");
@@ -119,14 +119,18 @@ $(function(){
 
     $(".diary-main .diary-year>.years>a").click(function (e) {
         e.preventDefault();
-        $(this).parents(".diary-year").toggleClass("close")
+        $(this).parents(".diary-year").toggleClass("my-close")
     });
 })
 
 window.onload=function(){
-    var tag=document.getElementById("tag").children;
+    var tag=$('#tag').find('li');
     var content=document.getElementById("tagContent").children;
     content[0].style.display = "block";
+    content[1].style.display = "none";
+    content[2].style.display = "none";
+    content[3].style.display = "none";
+    content[4].style.display = "none";
     tag[0].className="current";
     var len= tag.length;//遍历动态集合应提前缓存length
     for(var i=0; i<len; i++){
@@ -142,46 +146,22 @@ window.onload=function(){
     }
 }
 $(function(){
-    $(".lifecon1 .life-pic").mouseenter(function(){
-        n=$(this).index();
-        $(".lifecon1 .life-pic li").eq(n-1).slideDown(100);
-    })
-    $(".lifecon1 .life-pic").mouseleave(function(){
-        n=$(this).index();
-        $(".lifecon1 .life-pic li").eq(n-1).slideUp(100);
-    })
-    $(".lifecon2 .life-pic").mouseenter(function(){
-        n=$(this).index();
-        $(".lifecon2 .life-pic li").eq(n-1).slideDown(100);
-    })
-    $(".lifecon2 .life-pic").mouseleave(function(){
-        n=$(this).index();
-        $(".lifecon2 .life-pic li").eq(n-1).slideUp(100);
-    })
-    $(".lifecon3 .life-pic").mouseenter(function(){
-        n=$(this).index();
-        $(".lifecon3 .life-pic li").eq(n-1).slideDown(100);
-    })
-    $(".lifecon3 .life-pic").mouseleave(function(){
-        n=$(this).index();
-        $(".lifecon3 .life-pic li").eq(n-1).slideUp(100);
-    })
-    $(".lifecon4 .life-pic").mouseenter(function(){
-        n=$(this).index();
-        $(".lifecon4 .life-pic li").eq(n-1).slideDown(100);
-    })
-    $(".lifecon4 .life-pic").mouseleave(function(){
-        n=$(this).index();
-        $(".lifecon4 .life-pic li").eq(n-1).slideUp(100);
-    })
-    $(".lifecon5 .life-pic").mouseenter(function(){
-        n=$(this).index();
-        $(".lifecon5 .life-pic li").eq(n-1).slideDown(100);
-    })
-    $(".lifecon5 .life-pic").mouseleave(function(){
-        n=$(this).index();
-        $(".lifecon5 .life-pic li").eq(n-1).slideUp(100);
-    })
+  var bindLifePic = function(lifeID) {
+    var sets = $(".lifecon" + lifeID + " .life-pic");
+    sets.each(function() {
+      $(this).mouseenter(function(){
+        $(this).find('li').slideDown(100);
+      });
+      $(this).mouseleave(function(){
+        $(this).find('li').slideUp(100);
+      })
+    });
+  }
+  bindLifePic(1);
+  bindLifePic(2);
+  bindLifePic(3);
+  bindLifePic(4);
+  bindLifePic(5);
 })
 
 //回到顶部

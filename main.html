@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta charset="utf-8"/>
     <title>self space</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" rel="script" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" rel="script" src="js/main_1.js"></script>
-    <script type="text/javascript" rel="script" src="js/main_2.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <!-- 页头部分-->
+  <div class="row">
     <div class="header">
         <div class="header_box">
             <input class="mysearchbox" type="text" maxlength="100">
-            <input class="myselfbox" type="button" maxlength="100" value="     Glad to see you~">
+            <input class="myselfbox" type="button" maxlength="100" value="   Glad to see you~">
             <div class="mywelcome">
-                欢迎来到 Livia 的个人空间
+                欢迎来到 <span style="font-size: 20px; line-height: 26px; font-weight: bold; color: #1a1; text-align: center;">Livia</span> 的个人空间
             </div>
         </div>
         <div class="header_content">
@@ -27,14 +31,26 @@
             </div>
         </div>
     </div>
+    </div>
     <!--导航条-->
+
     <div class="nav">
-        <ul class="navbar">
+        <ul class="navbar row">
+          <div class="col-md-2 col-md-offset-1">
             <li><a href="main.html"><img src="images/home.png"><br>首页</a></li>
+          </div>
+          <div class="col-md-2">
             <li><a href="#m-info"><img src="images/info.png"><br>成长脚印</a></li>
+          </div>
+          <div class="col-md-2">
             <li><a href="#m-life"><img src="images/view.png"><br>路上风景</a></li>
+          </div>
+          <div class="col-md-2">
             <li><a href="#m-diary"><img src="images/dairy.png"><br>时光轴</a></li>
+          </div>
+          <div class="col-md-2">
             <li><a href="#m-share"><img src="images/dia.png"><br>分享域</a></li>
+          </div>
         </ul>
     </div>
     <!--主体部分-->
@@ -44,10 +60,15 @@
             <!--锚点连接-->
             <a name="m-info"></a>
             <div class="content-intro">
-                <div class="intro-wrapper">
-                    <p class="content-title">成长脚印</p>
-                    <div class="sidetop">
+                <div class="intro-wrapper container">
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                      <p class="content-title">成长脚印</p>
+                    </div>
+                  </div>
+                    <div class="sidetop row">
                         <ul>
+                          <div class="col-md-2 col-md-offset-1">
                             <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
                                 <hr>1991
                                 <ul>
@@ -55,6 +76,8 @@
                                     <p>出生</p>
                                 </ul>
                             </li>
+                          </div>
+                          <div class="col-md-2">
                             <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
                                 <hr>1998
                                 <ul>
@@ -62,6 +85,8 @@
                                     <p>小学</p>
                                 </ul>
                             </li>
+                          </div>
+                          <div class="col-md-2">
                             <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
                                 <hr>2004
                                 <ul>
@@ -69,6 +94,8 @@
                                     <p>中学</p>
                                 </ul>
                             </li>
+                          </div>
+                          <div class="col-md-2">
                             <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
                                 <hr>2010
                                 <ul>
@@ -76,6 +103,8 @@
                                     <p>大学</p>
                                 </ul>
                             </li>
+                          </div>
+                          <div class="col-md-2">
                             <li onmousemove="showpic(this)" onmouseout="hidepic(this)">
                                 <hr>2014
                                 <ul>
@@ -83,13 +112,15 @@
                                     <p>工作</p>
                                 </ul>
                             </li>
+                          </div>
                         </ul>
                     </div>
                     <!----------- 关于爱好 ------------>
                     <div class="mine_faith">
-                        <p>
-                            <img src="images/hua.png"><b>O</b>nce you see the faith,you get hope...
-                        </p>
+                      <p>
+                        <img src="images/hua.png"><b>O</b>nce you see the faith,you get hope...
+                      </p>
+                      <div class="row">
                         <div id="slide_box">
                             <div id="slider">
                                 <ul id="imgs">
@@ -98,6 +129,7 @@
                                 </ul>
                             </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -106,61 +138,92 @@
         <div class="scenery">
             <a name="m-life"></a>
             <div class="content-life">
-                <div class="intro-wrapper">
-                    <p class="content-title">路上风景</p>
+                <div class="intro-wrapper container">
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                      <p class="content-title">路上风景</p>
+                    </div>
+                  </div>
+
                     <div class="lifetime">
+                      <div class="row">
                         <ul id="tag">
+                          <div class="col-md-2 col-md-offset-1">
                             <li>
                                 <hr>1991<br><span>恩施</span>
                             </li>
+                          </div>
+                          <div class="col-md-2">
                             <li>
                                 <hr>1998<br><span>无锡</span>
                             </li>
-
+                          </div>
+                          <div class="col-md-2">
                             <li>
                                 <hr>2014<br><span>深圳</span>
                             </li>
+                          </div>
+                          <div class="col-md-2">
                             <li>
                                 <hr>2015<br><span>厦门</span>
                             </li>
+                          </div>
+                          <div class="col-md-2">
                             <li>
                                 <hr>未来时<br><span>巴黎</span>
                             </li>
+                          </div>
                         </ul>
+                      </div>
                         <div id="tagContent">
                             <div class="lifecon1">
                                 <p>-- 我的家乡 --<br>
                                     恩施，湖北省唯一少数民族自治州，享有“鄂西林海”、 “华中药库”、 “烟草王国”、“世界硒都”之称号。</p>
+                            <div class="row">
+                              <div class="col-md-4">
                                 <ul class="life-pic">
                                     <img src="images/es_dxg.jpg"><br>
                                     百里绝壁、千丈瀑布、傲啸独峰、远古村寨
                                     <li>恩施大峡谷</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/en_nec.jpg">
+                                    <img src="images/en_nec.jpg"><br>
                                     摔碗酒、摆手舞、小吃街、民族情
                                     <li>女儿城</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/es_tsc.jpg">
+                                    <img src="images/es_tsc.jpg"><br>
                                     吐司城墙、鼓楼、钟楼、卧虎铁索桥
                                     <li>吐司城</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/es_fxp.jpg">
+                                    <img src="images/es_fxp.jpg"><br>
                                     侗族文化、西兰卡普、玉露茶园
                                     <li>枫香坡</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/en_llg.jpg">
+                                    <img src="images/en_llg.jpg"><br>
                                     喀斯特地貌，流泉飞溅，云封雾锁
                                     <li>龙鳞宫</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/es_sby.jpg">
+                                    <img src="images/es_sby.jpg"><br>
                                     天然石林，气势磅礴
                                     <li>梭布垭石林</li>
                                 </ul>
+                              </div>
+                            </div>
+                              <br>
                                 <p>-- 喜爱这里的民族特色--<br>
                                     苗族，土家族，侗族的民族文化集于一体，建筑，美食，织布...
                                 </p>
@@ -170,36 +233,51 @@
                                 <p>-- 第二故乡 --<br>
                                     无锡，自古就是鱼米之乡，素有布码头、钱码头、窑码头、丝都、米市之称，是中国国家历史文化名城。
                                 </p>
+                              <div class="row">
+                                <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/wx_taihu.jpg">
+                                    <img src="images/wx_taihu.jpg"> <br/>
                                     是迷人的风光，亦是供养无锡人的生命之源
                                     <li>太湖鼋头渚</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/wx_my.jpg">
+                                    <img src="images/wx_my.jpg"> <br/>
                                     老藤、古梅、新桂、奇石
                                     <li>梅园</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/wx_sgc1.jpg">
+                                    <img src="images/wx_sgc1.jpg"> <br/>
                                     影视基地，赤壁栈道，姑苏东吴
                                     <li>三国城，水浒城</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/wx_zz.jpg">
+                                    <img src="images/wx_zz.jpg"> <br/>
                                     温婉古镇，小桥流水人家
                                     <li>周庄</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/wx_ncs.jpg">
+                                    <img src="images/wx_ncs.jpg"> <br/>
                                     始建于梁武帝太清年间，南朝名寺，号称“江南最胜丛林”。
                                     <li>南禅寺</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/wx_zhw.jpg">
+                                    <img src="images/wx_zhw.jpg"> <br/>
                                     品茗、听琴、闻香、观水、禅意
                                     <li>拈花湾</li>
                                 </ul>
+                              </div>
+                            </div>
+                             <br/>
                                 <p>-- 喜爱无锡的人文气息 --<br>
                                     是寺是河，是诗是画，是石径是帆船，是早起无锡卫视传唱之歌，是吴侬软语的耳鬓厮磨。
                                 </p>
@@ -209,36 +287,51 @@
                                 <p>-- 工作初到之地 --<br>
                                     深圳，经济特区，且享有“设计之都”、“钢琴之城”、“创客之城”等美誉。
                                 </p>
+                              <div class="row">
+                                <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/sz_sjzc.jpg">
+                                    <img src="images/sz_sjzc.jpg"><br/>
                                     世界名建筑之缩影，‘环游世界’
                                     <li>世界之窗</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/sz_hsl.jpg">
+                                    <img src="images/sz_hsl.jpg"><br/>
                                     晚风拂面，与香港隔海相望
                                     <li>红树林</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/sz_dms.jpg">
+                                    <img src="images/sz_dms.jpg"><br/>
                                     面朝大海，春暖花开
                                     <li>大梅沙海湾</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/sz_hqc.jpg">
+                                    <img src="images/sz_hqc.jpg"><br/>
                                     从东部到西部，花开满地，欢乐游园
                                     <li>华侨城</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/sz_xz.jpg">
+                                    <img src="images/sz_xz.jpg"><br/>
                                     带上单反，骑上单车，随手便是一张桌面
                                     <li>荷兰花卉小镇</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/sz_dfyhc.jpg">
+                                    <img src="images/sz_dfyhc.jpg"><br/>
                                     色彩鲜艳的油画临街而展，频频驻足，却怎么也看不够
                                     <li>大芬油画村</li>
                                 </ul>
+                              </div>
+                            </div>
+                              <br/>
                                 <p>-- 喜爱深圳飞速发展的不仅仅是经济，还有人文--<br>
                                     城市规划大到商业中心，小到街边花木，无不赏心悦目
                                 </p>
@@ -248,36 +341,51 @@
                                 <p>-- 说走就走的旅行 --<br>
                                     厦门，北邻南安，东南与大小金门和大担岛隔海相望，是闽南地区的主要城市之一，与漳州、泉州并称“厦漳泉”，闽南金三角经济区。
                                 </p>
+                             <div class="row">
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/xm_hdl.jpg">
+                                    <img src="images/xm_hdl.jpg"></br>
                                     单车骑行，海风扑面，一面是干净的路景，一面是望不到边的海
                                     <li>环岛路</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/xm_gly.jpg">
+                                    <img src="images/xm_gly.jpg"></br>
                                     阳光与美景同在，心情怎能不好？
                                     <li>鼓浪屿</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/xm_zsl.jpg">
+                                    <img src="images/xm_zsl.jpg"></br>
                                     步行街，繁华市区，建筑仍保留旧时模样
                                     <li>中山路</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/xm_hdsj.jpg">
+                                    <img src="images/xm_hdsj.jpg"></br>
                                     玻璃长廊，仿佛置身海底，忽而有鱼扑面而来
                                     <li>海底世界</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/xm_ft.jpg">
+                                    <img src="images/xm_ft.jpg"></br>
                                     游乐王国，高科技的主题公园
                                     <li>方特度假王国</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/xm_jgh.jpg">
+                                    <img src="images/xm_jgh.jpg"></br>
                                     林区山形如“湖”状而得名，原始森林
                                     <li>金光湖</li>
                                 </ul>
+                              </div>
+                            </div>
+                          </br>
                                 <p>-- 喜爱厦门恣意悠闲热爱生活的姿态--<br>
                                     有海，有风铃，有信纸，有藤蔓，有转角精心设计的门店，走进去是不一样的世界。
                                 </p>
@@ -287,37 +395,52 @@
                                 <p>-- 最想去的旅游城市 --<br>
                                     巴黎（Paris），法国的首都，是欧洲第二大城市，誉为时尚之都，世界花都,浪漫之都，艺术之都。
                                 </p>
+                            <div class="row">
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/bl1.png">
+                                    <img src="images/bl1.png"><br/>
                                     巴黎的标志之一，俗称“铁娘子”。
                                     <li>埃菲尔铁塔</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/bl2.png">
+                                    <img src="images/bl2.png"><br/>
                                     出征、胜利、和平、抵抗
                                     <li>凯旋门</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/bl3.png">
+                                    <img src="images/bl3.png"><br/>
                                     世界四大博物馆之首，藏有各国艺术珍品
                                     <li>卢浮宫</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/bl4.png">
+                                    <img src="images/bl4.png"><br/>
                                     哥特式建筑，宗教、文化、建筑艺术
                                     <li>巴黎圣母院</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/bl5.png">
+                                    <img src="images/bl5.png"><br/>
                                     法国北部大河，全长780公里
                                     <li>塞纳河畔</li>
                                 </ul>
+                              </div>
+                              <div class="col-md-4">
                                 <ul class="life-pic">
-                                    <img src="images/bl6.png">
+                                    <img src="images/bl6.png"><br/>
                                     世界五大宫殿之一，豪华富丽
                                     <li>凡尔赛宫</li>
                                 </ul>
-                                <p>-- 喜爱巴黎的梦幻 --<br>
+                              </div>
+                            </div>
+                            <br/>
+                                <p>-- 喜爱巴黎的梦幻 --<br/>
                                     巴黎不仅仅是个地方，它已经成了一种精神状态。无论你是谁，都可以在这个既怀旧又前卫，既宁静又喧嚣，既国际化又本土化的城市找到自己需要的那一剂量心灵解药，到过巴黎的，一定不会再稀罕天堂
                                 </p>
                             </div>
@@ -621,5 +744,9 @@
     </div>
     <!--返回顶部-->
     <div class="totop"><a></a></div>
+  <script type="text/javascript" rel="script" src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" rel="script" src="js/main_1.js"></script>
+  <script type="text/javascript" rel="script" src="js/main_2.js"></script>
 </body>
 </html>

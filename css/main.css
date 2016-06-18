@@ -1,8 +1,17 @@
 body {
     margin:0;
     padding:0;
-    font:12px monospace,Helvetica,Arial,sans-serif;
+    font:12px monospace,Helvetica,Arial,sans-serif !important;
     background:#f7f7f7;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+html {
+  font-size: 16px !important;
 }
 li,ol,ul,a,p {
     padding: 0;
@@ -24,7 +33,7 @@ em,i {
     height: 219px;
 }
 .header_content{
-    width: 1000px;
+    width: 100%;
     margin:0 auto;
     position: relative;
 }
@@ -73,8 +82,9 @@ em,i {
 }
 .header_box .mysearchbox{
     float: right;
-    padding: 0px 10px;
+    padding: 0px 1.5%;
     width: 17px;
+    min-width: 40px;
     height: 32px;
     cursor: pointer;
     background: url("../images/search.png") right 5px center no-repeat;
@@ -87,7 +97,7 @@ em,i {
     -o-transition: all 0.3s;
     -webkit-transition:  all 0.3s;
     -moz-transition: all 0.3s;
-    margin-right: 180px;
+    margin-right: 15%;
 }
 .header_box .mysearchbox:focus{
     width: 180px;
@@ -95,8 +105,7 @@ em,i {
 }
 .header_content .saying{
     margin-top: 35px;
-    margin-right: 28px;
-    width: 370px;
+    margin-right: 34%;
     text-indent: 2em;
     line-height: 20px;
     font-size: 0.8rem;
@@ -105,11 +114,11 @@ em,i {
 }
 .header_content .portrait{
     position: absolute;
-    left: 0px;
+    left: 10%;
     top: -10px;
     width: 190px;
     height: 185px;
-    padding-top:5px;
+    padding-top:2px;
     margin: 15px;
     border: 1px #999999 solid;
     text-align: center;
@@ -142,16 +151,24 @@ div.nav{
     overflow: hidden;
 }
 div.nav ul{
-    width:1000px;
+    width: auto;
     margin: auto;
     overflow: hidden;
-    height: 70px;
-
 }
+
+div.nav .navbar {
+  border: 0px solid transparent !important;
+}
+
+div.nav .navbar div {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
 div.nav ul li{
+    width: 100%;
     padding-top: 8px;
     float: left;
-    width:20% ;
     text-align: center;
     font-size: 1.2rem;
     height:62px;
@@ -159,6 +176,7 @@ div.nav ul li{
 div.nav ul li a{
     color: #22BC81;
     vertical-align: middle;
+    text-decoration: none;
 }
 div.nav ul li img{
     width: 25px;
@@ -191,7 +209,7 @@ div.footprint
     /*background:url(../images/bg.png) no-repeat center top;*/
 }
 .content-intro{
-    width: 1000px;
+    width: 100%;
     margin:0 auto;
     overflow: hidden;
     padding-top: 30px;
@@ -221,17 +239,18 @@ div.footprint
 li hr{
     width: 1px;
     height: 27px;
+    border-left: 1px solid #a6a6a6 !important;
 }
 .sidetop li ul {
     position: absolute;
-    left: 25px;
-    top: 28px;
+    left: 40px;
+    top: 30px;
     vertical-align: middle;
     display: none;
 }
 /************about faith***************/
 div.mine_faith{
-    width:1000px;
+    width:100%;
 }
 div.mine_faith>p{
     padding:5px;
@@ -246,7 +265,7 @@ div.mine_faith>p>img{
     vertical-align: middle;
 }
 div.mine_faith>p>b{
-    color:#fd0;
+    color:#d644ff;
     font-size:30px;
 }
 /*banner*/
@@ -255,7 +274,7 @@ div.mine_faith>p>b{
     margin:0 auto;
 }
 #slider {
-    width: 670px;
+    width: 58%;
     height:410px;
     margin:0 auto;
     position:relative;
@@ -298,7 +317,7 @@ div.scenery{
     background-color: #F0F4F0;
 }
 .content-life{
-    width: 1000px;
+    width: 100%;
     margin:0 auto;
     overflow: hidden;
     padding-top: 30px;
@@ -308,14 +327,14 @@ div.scenery{
     margin-bottom: 2px;
 }
 .current{
-    background: url("../images/le-1.png") no-repeat left 50px top 60px, url("../images/le-2.png") no-repeat right 50px top 60px;
+    background: url("../images/le-1.png") no-repeat left 50px top 80px, url("../images/le-2.png") no-repeat right 50px top 80px;
     color: #1f991f;
 }
 .lifetime{
     width: 100%;
 }
 .lifetime li{
-    width: 20%;
+    width: 100%;
     float: left;
     font-size: 1.1rem;
     text-align: center;
@@ -330,19 +349,30 @@ div.scenery{
 #tag{
     overflow:hidden;
 }
+
+#tag div{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
 #tag li{
     font-size: 1.2rem;
     cursor: pointer;
+    float: left;
+    position: relative;
 }
 #tag li span{
     font-size: 1.25rem;
     line-height: 1.8rem;
 }
+/*
 #tagContent div{
-    width:1000px;
+    width: auto;
     overflow: hidden;
     display:none;
 }
+*/
+
 #tagContent .lifecon1,.lifecon2,.lifecon3,.lifecon4,.lifecon5{
     margin-top: 20px;
 }
@@ -355,7 +385,7 @@ div.scenery{
 }
 
 #tagContent .life-pic{
-    width: 300px;
+    width: auto;
     height: 230px;
     margin:20px 12px;
     padding: 3px;
@@ -520,14 +550,14 @@ div.diary-list li p.intro {
     color: #1f991f;
 }
 /***************/
-div.diary-wrapper:first-child div.diary-year.close>.years i{
+div.diary-wrapper:first-child div.diary-year.my-close>.years i{
     transform:rotate(-90deg);
     -webkit-transform:rotate(-90deg);
     -moz-transform:rotate(-90deg);
     -ms-transform:rotate(-90deg);
     -o-transform:rotate(-90deg)
 }
-div.diary-wrapper:first-child .diary-main .diary-year.close .diary-list{
+div.diary-wrapper:first-child .diary-main .diary-year.my-close .diary-list{
     opacity:0;
     height:0!important;
 }
