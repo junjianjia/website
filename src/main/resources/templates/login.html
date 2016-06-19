@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tooltips</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            font-size:1em;
+        }
+        div.container{
+            margin-top:10%;
+            border-radius:8px;
+            color:#3a1;
+            font-size:1.2em;
+        }
+        @media screen and (min-width:992px){
+            div.container{
+              width:30%;
+            }
+        }
+        @media screen and (min-width:699px) and (max-width:991px){
+            div.container{
+                width:50%;
+            }
+        }
+        @media screen and (max-width:698px){
+            div.container{
+                width:90%;
+            }
+        }
+        div.container>form{
+            padding:20px;
+        }
+        div.container>h1{
+            font-size:2.5em;
+            font-weight:bold;
+            color:#1a1;
+            text-align:center;
+        }
+        div.container button{
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-success">
+        <h1>登 陆</h1>
+        <form class="form-horizontal" method="POST" action=#springUrl("/login")>
+            <div class="form-group">
+                <label for="uname" class="col-sm-3 control-label">鼎鼎大名</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="uname" name="username" value="$!{username}" placeholder="主人请出示大名~">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="upwd" class="col-sm-3 control-label">你知我知</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="upwd" name="password" value="$!{password}" placeholder="主人请出示暗号~">
+                    <span class="help-block text-danger" style="margin-bottom: 0px; color: deeppink"> $!{msg} </span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button type="reset" class="btn btn-success">Reset</button>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
